@@ -2,10 +2,10 @@
 
 namespace Database\Seeders;
 
-use App\Models\Publisher;
+use App\Models\User;
 use Illuminate\Database\Seeder;
 
-class PublisherSeeder extends Seeder
+class UserSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,6 +14,6 @@ class PublisherSeeder extends Seeder
      */
     public function run()
     {
-        Publisher::factory(10)->create();
+        User::factory(10)->create();
     }
 }

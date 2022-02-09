@@ -2,7 +2,7 @@
 
 namespace Database\Factories;
 
-use App\Models\Publisher;
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class BookFactory extends Factory
@@ -16,7 +16,7 @@ class BookFactory extends Factory
     {
         return [
             'name' => $this->faker->sentence(rand(6, 10)),
-            'publisher_id' => Publisher::inRandomOrder()->first()->id,
+            'user_id' => User::inRandomOrder()->first()->id,
         ];
     }
 }
